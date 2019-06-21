@@ -3,6 +3,13 @@ body {
   color: #FA5144;
   font-family: 'Noto Sans JP', sans-serif;
   padding: 7rem;
+  padding-top: 5rem;
+}
+a {
+  color: #FA5144;
+}
+a:hover {
+  color: rgba(250,81,68,0.7)
 }
 h1 {
   font-size: 7rem;
@@ -13,24 +20,53 @@ h1 {
 }
 .welcome-message {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 #logo {
   width: 39px;
 }
-section {
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.logo-wrap {
   margin-bottom: 5rem;
 }
-section:last-child {
-  margin-bottom: 0;
+.welcome-wrap {
+  margin-bottom: 7rem;
 }
 .info-wrap {
   align-items: baseline;
+  border-top: 2px solid #FA5144;
   display: flex;
-  margin-left: 12rem;
 }
 .info-wrap h4 {
+  flex: 1;
+  margin-right: 3rem;
+  padding-top: 1rem;
+}
+.info-wrap ul {
+  flex: 3;
+}
+.info-wrap ul li {
+  align-items: baseline;
+  border-bottom: 1px solid rgba(250,81,68,0.2);
+  display: flex;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.info-wrap ul li i {
+  flex-basis: 16px;
   margin-right: 2rem;
+  text-align: center;
+}
+.info-wrap ul li i.fa-whatsapp {
+  font-size: 1.3rem;
+}
+.info-wrap ul li span {
+  flex-grow: 1;
 }
 
 @media (max-width: 700px) {
@@ -38,7 +74,7 @@ section:last-child {
     padding: 2rem;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   section {
     margin-bottom: 3rem;
@@ -46,5 +82,8 @@ section:last-child {
   .info-wrap {
     display: block;
     margin-left: 0;
+  }
+  .info-wrap ul li i {
+    margin-right: 1rem;
   }
 }

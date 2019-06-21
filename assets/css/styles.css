@@ -1,0 +1,50 @@
+body {
+  background-color: #FFEDE6;
+  color: #FA5144;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 7rem;
+}
+h1 {
+  font-size: 7rem;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  margin: 0;
+  margin-left: -8px;
+}
+.welcome-message {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+#logo {
+  width: 39px;
+}
+section {
+  margin-bottom: 5rem;
+}
+section:last-child {
+  margin-bottom: 0;
+}
+.info-wrap {
+  align-items: baseline;
+  display: flex;
+  margin-left: 12rem;
+}
+.info-wrap h4 {
+  margin-right: 2rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  .info-wrap {
+    display: block;
+    margin-left: 0;
+  }
+}

@@ -1,15 +1,15 @@
 body {
-  background-color: #FFEDE6;
-  color: #FA5144;
+  background-color: #FFF4F0;
+  color: #E11505;
   font-family: 'Noto Sans JP', sans-serif;
   padding: 7rem;
   padding-top: 5rem;
 }
 a {
-  color: #FA5144;
+  color: #E11505;
 }
 a:hover {
-  color: rgba(250,81,68,0.7)
+  color: rgba(225,21,5,0.7);
 }
 h1 {
   font-size: 7rem;
@@ -39,7 +39,7 @@ li {
 }
 .info-wrap {
   align-items: baseline;
-  border-top: 2px solid #FA5144;
+  border-top: 2px solid #E11505;
   display: flex;
 }
 .info-wrap h4 {
@@ -52,7 +52,7 @@ li {
 }
 .info-wrap ul li {
   align-items: baseline;
-  border-bottom: 1px solid rgba(250,81,68,0.2);
+  border-bottom: 1px solid rgba(225,21,5,0.2);
   display: flex;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;

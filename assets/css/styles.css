@@ -7,6 +7,7 @@ body {
 }
 a {
   color: #E11505;
+  text-decoration: none;
 }
 a:hover {
   color: rgba(225,21,5,0.7);
@@ -22,51 +23,52 @@ h1 {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
-#logo {
-  width: 39px;
-}
 ul,
 li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.logo-wrap {
+.icon {
+  background-position: center;
+  display: inline-block;
+  height: 24px;
+  text-align: center;
+  width: 24px;
+}
+.icon svg {
+  height: 24px;
+  width: 24px;
+}
+.logo {
   margin-bottom: 5rem;
 }
-.welcome-wrap {
+.welcome {
   margin-bottom: 7rem;
 }
-.info-wrap {
+.info {
   align-items: baseline;
   border-top: 2px solid #E11505;
   display: flex;
 }
-.info-wrap h4 {
+.info h4 {
   flex: 1;
   margin-right: 3rem;
   padding-top: 1rem;
 }
-.info-wrap ul {
+.info ul {
   flex: 3;
 }
-.info-wrap ul li {
-  align-items: baseline;
+.info ul li a {
+  align-items: center;
   border-bottom: 1px solid rgba(225,21,5,0.2);
   display: flex;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
-.info-wrap ul li i {
-  flex-basis: 16px;
+.info ul li .icon {
+  flex-basis: 24px;
   margin-right: 2rem;
-  text-align: center;
-}
-.info-wrap ul li i.fa-whatsapp {
-  font-size: 1.3rem;
-}
-.info-wrap ul li span {
-  flex-grow: 1;
 }
 
 @media (max-width: 700px) {
@@ -79,11 +81,11 @@ li {
   section {
     margin-bottom: 3rem;
   }
-  .info-wrap {
+  .info {
     display: block;
     margin-left: 0;
   }
-  .info-wrap ul li i {
+  .info ul li i {
     margin-right: 1rem;
   }
 }

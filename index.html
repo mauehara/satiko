@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pousada da Satiko</title>
     <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142488148-1"></script>
@@ -24,10 +25,37 @@
     <section class="welcome">
       <span class="welcome-message">Bem-vindos — ようこそ</span>
       <h1>Pousada da Satiko</h1>
+      <p>Ilha Grande — Angra dos Reis — RJ</p>
     </section>
-    <section class="info">
-      <h4>Info e reservas</h4>
-      <ul>
+    <section class="module module--gallery">
+      <h4 class="module__title">Fotos</h4>
+      <ul class="module__content gallery">
+        <li class="gallery__piece gallery__piece--main">
+          <img
+            src="assets/images/gallery_image_01.jpg"
+            alt="Foto da fachada da pousada"
+            onclick="openModal();currentPiece(0);"
+          />
+        </li>
+        <li class="gallery__piece">
+          <img
+            src="assets/images/gallery_image_02.jpg"
+            alt="Vista da varanda"
+            onclick="openModal();currentPiece(1);"
+          />
+        </li>
+        <li class="gallery__piece">
+          <img
+            src="assets/images/gallery_image_03.jpg"
+            alt="Vista do quarto"
+            onclick="openModal();currentPiece(2);"
+          />
+        </li>
+      </ul>
+    </section>
+    <section class="module">
+      <h4 class="module__title">Info e reservas</h4>
+      <ul class="module__content info-list">
         <li>
           <a href="https://wa.me/5524998579784" target="_blank" rel="noreferrer">
             <span class="icon">
@@ -62,5 +90,26 @@
         </li>
       </ul>
     </section>
+
+    <!-- The Galley Modal -->
+  <div id="gallery-modal" class="modal">
+    <header class="modal-header">
+      <button type="button" name="close-modal" class="close-modal" onclick="closeModal();">
+        <svg viewBox="0 0 24 24" role="img" aria-label="Fechar" focusable="false" style="height: 24px; width: 24px; display: block; fill: rgb(0, 0, 0);"><path d="m23.25 24c-.19 0-.38-.07-.53-.22l-10.72-10.72-10.72 10.72c-.29.29-.77.29-1.06 0s-.29-.77 0-1.06l10.72-10.72-10.72-10.72c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l10.72 10.72 10.72-10.72c.29-.29.77-.29 1.06 0s .29.77 0 1.06l-10.72 10.72 10.72 10.72c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22" fill-rule="evenodd"></path></svg>
+      </button>
+    </header>
+    <div class="modal-content gallery-modal">
+      <div class="modal-gallery__piece">
+        <img src="assets/images/gallery_image_01.jpg" alt="Foto da fachada da pousada" />
+      </div>
+      <div class="modal-gallery__piece">
+        <img src="assets/images/gallery_image_02.jpg" alt="Vista da varanda" />
+      </div>
+      <div class="modal-gallery__piece">
+        <img src="assets/images/gallery_image_03.jpg" alt="Vista do quarto" />
+      </div>
+    </div>
+  </div>
+
   </body>
 </html>

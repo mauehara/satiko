@@ -40,8 +40,11 @@ li {
   height: 24px;
   width: 24px;
 }
-.logo {
+.logo-container {
   margin-bottom: 5rem;
+}
+#logo {
+  height: 64px;
 }
 .welcome {
   margin-bottom: 7rem;

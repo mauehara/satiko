@@ -22,6 +22,10 @@ function showPiece(n) {
   // Update title
   var title = document.querySelector("#gallery-modal-title");
   title.innerHTML = pieces[n].getElementsByTagName("img")[0].alt;
+
+  // Update indexes
+  document.querySelector("#total-index").innerHTML = pieces.length;
+  document.querySelector("#current-index").innerHTML = n+1;
 }
 
 function showNextPiece() {

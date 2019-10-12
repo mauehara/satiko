@@ -149,12 +149,24 @@ button:focus {
 .modal-header {
   text-align: right;
 }
-.modal-gallery__piece {
+.gallery-modal {
+  display: flex;
+  align-items: center;
+}
+.gallery-modal__control-prev {
+  width: 32px;
+  height: 32px;
+  padding: 3rem;
+}
+.gallery-modal__control-prev:hover {
+  cursor: pointer;
+}
+.gallery-modal__piece {
   display: block;
   overflow: hidden;
   text-align: center;
 }
-.modal-gallery__piece img {
+.gallery-modal__piece img {
   border-radius: 16px;
   height: auto;
   min-width: 272px;

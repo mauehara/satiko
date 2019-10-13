@@ -7,7 +7,7 @@ body {
 }
 a {
   color: #E11505;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: rgba(225,21,5,0.7);
@@ -170,6 +170,7 @@ button:focus {
   border-radius: 16px;
   height: auto;
   min-width: 272px;
+  max-width: 680px;
   width: 80%;
 }
 .close-modal {
@@ -192,6 +193,11 @@ button:focus {
   color: #999;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+}
+
+/* Utils */
+.mb-1 {
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 1000px) {
@@ -243,6 +249,11 @@ button:focus {
 }
 
 @media (max-width: 520px) {
+  .module__title {
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
   .gallery-modal {
     display: grid;
     grid-template-columns: 1fr 1fr;

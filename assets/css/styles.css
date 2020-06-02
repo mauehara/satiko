@@ -160,6 +160,7 @@ button:focus {
 }
 .gallery-modal__control:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 .gallery-modal__piece {
   display: block;
@@ -167,10 +168,9 @@ button:focus {
   text-align: center;
 }
 .gallery-modal__piece img {
-  border-radius: 16px;
+  border-radius: 8px;
   height: auto;
   min-width: 272px;
-  max-width: 680px;
   width: 80%;
 }
 .close-modal {
@@ -179,6 +179,9 @@ button:focus {
   position: absolute;
   top: 0;
   right: 0;
+}
+.close-modal:hover {
+  opacity: 0.5;
 }
 #gallery-modal-title {
   text-align: center;
